@@ -1,12 +1,13 @@
 import './App.css'
+import { Navbar } from './assets/components/navbar/Navbar'
 
 function App() {
 
   return (
     <>
-      <h1 className="text-3xl underline">
-        Hello world!
-      </h1>
+      <div className="min-h-screen">
+        <Navbar />
+      </div>
     </>
   )
 }
