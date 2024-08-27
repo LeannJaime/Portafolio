@@ -1,4 +1,5 @@
 import IconCloud from "../InteractiveIcons";
+import TextAnimate from "../Texts/Textanimated";
 
 const slugs = [
     "typescript",
@@ -32,8 +33,13 @@ const slugs = [
 
 export function Skills() {
     return (
-        <div className="flex w-full items-center justify-center overflow-hidden rounded-lg bg-transparent px-20 pb-20 pt-8 ">
-            <IconCloud iconSlugs={slugs} />
-        </div>
+        <>
+            <div className="flex justify-center">
+                <TextAnimate text="SKILLS" type="fadeIn" />
+            </div>
+            <div className="flex w-full items-center justify-center overflow-hidden rounded-lg bg-transparent px-20 pb-20 pt-8 ">
+                <IconCloud iconSlugs={slugs} />
+            </div>
+        </>
     );
 }
