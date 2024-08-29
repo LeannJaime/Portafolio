@@ -2,33 +2,17 @@ import IconCloud from "../InteractiveIcons";
 import TextAnimate from "../Texts/Textanimated";
 
 const slugs = [
-    "typescript",
+    // "typescript",
     "javascript",
-    "dart",
-    "java",
+    "vite",
     "react",
-    "flutter",
     "html5",
     "css3",
     "nodedotjs",
-    "express",
-    "prisma",
-    "amazonaws",
-    "postgresql",
     "firebase",
-    "nginx",
     "vercel",
-    "testinglibrary",
-    "jest",
-    "cypress",
-    "docker",
     "git",
-    "jira",
     "github",
-    "gitlab",
-    "visualstudiocode",
-    "sonarqube",
-    "figma",
 ];
 
 export function Skills() {
@@ -37,7 +21,7 @@ export function Skills() {
             <div className="flex justify-center">
                 <TextAnimate text="SKILLS" type="fadeIn" />
             </div>
-            <div className="flex w-full items-center justify-center overflow-hidden rounded-lg bg-transparent px-20 pb-20 pt-8 ">
+            <div className="flex w-full items-center justify-center overflow-hidden rounded-lg px-20 pb-20 pt-8">
                 <IconCloud iconSlugs={slugs} />
             </div>
         </>

@@ -17,7 +17,7 @@ const particlesConfig =
             "color": {
                 "value": "#fff"
             },
-            "opacity": 1
+            "opacity": 0
         },
         "enable": false
     },

@@ -16,14 +16,14 @@ export const cloudProps: Omit<ICloud, "children"> = {
             justifyContent: "center",
             alignItems: "center",
             width: "100%",
-            paddingTop: 40,
+            paddingTop: 10,
         },
     },
     options: {
         reverse: true,
         depth: 1,
         wheelZoom: false,
-        imageScale: 2,
+        imageScale: 2.5,
         activeCursor: "default",
         tooltip: "native",
         initial: [0.1, -0.1],
@@ -46,7 +46,7 @@ export const renderCustomIcon = (icon: SimpleIcon, theme: string) => {
         bgHex,
         fallbackHex,
         minContrastRatio,
-        size: 42,
+        size: 40,
         aProps: {
             href: undefined,
             target: undefined,
@@ -74,7 +74,7 @@ export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
         if (!data) return null;
 
         return Object.values(data.simpleIcons).map((icon) =>
-            renderCustomIcon(icon, theme || "light"),
+            renderCustomIcon(icon, theme || "dark"),
         );
     }, [data, theme]);
 
